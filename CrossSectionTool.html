@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Cross Section Tool - Pierre_McDougall_CODE</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <nav class="opaqueBG">
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li class="dropdown">
+            <a>Projects</a>
+            <div class="opaqueBG">
+              <a href="FPSIntegrationTool.html">FPS Integration Tool</a>
+              <a href="AstroBumpers.html">AstroBumpers</a>
+              <a href="CrossSectionTool.html">Cross Section Tool</a>
+              <a href="CPPOpenGLDemo.html">C++ &amp; OpenGL Demonstration</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="videoSection semiOpaqueBG">
+        <h1>Cross Section Tool</h1>
+        <div class="videoContainer">
+          <div>
+            <iframe width="1036" height="846" src="https://www.youtube.com/embed/Plp8HgznLMc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      </section>
+      <section class="intro opaqueBG">
+        <p>
+          As an individual research and development project conducted under my employment at Babcock, I produced a reusable system that allows cross sectioning to be simulated on models within Unity to create engaging and effective training media. 
+        </p>
+        <p>
+          The tool is focused around using planes that defined where the cross section would occur and on which Materials. It also allows:
+        </p>
+        <ul>
+          <li>Cross sections to be moved and rotated even during runtime</li>
+          <li>Multiple planes to be involve with cross sectioning a Material, useful for making all kinds of slicing effects</li>
+          <li>Clipping and Volumetric modes (explained below)</li>
+        </ul>
+        <p>This illustration demonstrates the different cross section types applied to the enclosed green cube:</p>
+        <div class="centredContainer">
+          <img id="CSTypes" src="CSTypes.png" height="200" width="600">
+        </div>
+        <p>The cross section involves the back faces of the effected Material being exposed and the illusion that the cross sectioned surface is flat comes from only allowing a bold colour to be presented on the back faces.</p>
+        <p>Clipping describes when the cross sectioning has just removed the effected part of the target Material giving a floating appearance, which is useful for the most external object involved in the cross section.</p>
+        <p>Volumetric clips the target Material and hides its front faces which allows the surrounding object to seem that its volume is filled and the enclosed object is solidified within it.</p>
+      </section>
+    </main>
+    <footer class="divider opaqueBG">
+      <h2 style="margin-bottom: 5px">Contact</h2>
+      <div class="alignElements">
+        <div class="buttonDivContainer">
+          <a href="mailto:pierre.mcdougall@myport.ac.uk?Subject=Pierre_McDougall_CODE%20Contact">
+            <div>
+              <img src="EmailIcon.png" height="70" width="70">  
+            </div>
+          </a>
+        </div>
+        <div class="buttonDivContainer">
+          <a href="https://www.linkedin.com/in/pierre-mcdougall/" target="_blank">
+            <div>
+              <img src="LinkedInIcon.png" height="70" width="70"> 
+            </div>
+          </a>
+        </div>
+      </div>
+      <p class="copyright">Pierre McDougall © 2020</p>
+    </footer>
+  </body>
+</html>

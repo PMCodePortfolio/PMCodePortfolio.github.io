@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>C++ &amp; OpenGL Demonstration - Pierre_McDougall_CODE</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <nav class="opaqueBG">
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li class="dropdown">
+            <a>Projects</a>
+            <div class="opaqueBG">
+              <a href="FPSIntegrationTool.html">FPS Integration Tool</a>
+              <a href="AstroBumpers.html">AstroBumpers</a>
+              <a href="CrossSectionTool.html">Cross Section Tool</a>
+              <a href="CPPOpenGLDemo.html">C++ &amp; OpenGL Demonstration</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="videoSection semiOpaqueBG">
+        <h1>C++ &amp; OpenGL Demonstration</h1>
+        <div class="videoContainer">
+          <div>
+            <iframe width="1036" height="846" src="https://www.youtube.com/embed/6qnQOw20GMc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      </section>
+      <section class="intro opaqueBG">
+        <p>
+          During the first lockdown of 2020, I explored programming in C++ and OpenGL and I started this individual project to practice on these areas.
+        </p>
+        <p>This project utilised the Programmable Render Pipeline of OpenGL which involves the features:</p>
+        <ul>
+          <li>Vertex Colouring &amp; Texturing</li>
+          <li>Overlaying &amp; Interactive Graphics</li>
+          <li>Perspective &amp; Orthographic Projections</li>
+          <li>Translation, Rotation, Scale Transformations</li>
+          <li>Transformations &amp; Vertex Based Animations</li>
+          <li>Object Instancing</li>
+          <li>
+            Lighting Effects
+            <ul>
+              <li>Directional</li>
+              <li>Point-Based</li>
+              <li>Colouring</li>
+              <li>Vertex Emissions</li>
+            </ul>
+          </li>
+          <li>Window Scalability</li>
+        </ul>
+        <p>
+          Two shaders were created for this project. The first being the Vertex shader, which describes the characteristics of the vertices in respect to position, projection, colour, lighting, normal and so on. The other is the Fragment shader which considers how each pixel is rendered by using information from the Vertex shader and textures.
+        </p>
+        <p>C++ was involved to house and manage the OpenGL code of the application and object orientated approaches of Abstraction and Reuse ware applied.</p>
+        <p>An example of this concept is the ‘Buffers’ class, which manages the ID, data and the shader variable to send the data to, for each of the required buffers to render a visual object.</p>
+        <p>As many procedures in OpenGL are particular and repetitive, ensuring complexity was concealed and allowing versatile use was adopted to aid the involvement of more advanced implementations and outcomes. </p>
+      </section>
+    </main>
+    <footer class="divider opaqueBG">
+      <h2 style="margin-bottom: 5px">Contact</h2>
+      <div class="alignElements">
+        <div class="buttonDivContainer">
+          <a href="mailto:pierre.mcdougall@myport.ac.uk?Subject=Pierre_McDougall_CODE%20Contact">
+            <div>
+              <img src="EmailIcon.png" height="70" width="70">  
+            </div>
+          </a>
+        </div>
+        <div class="buttonDivContainer">
+          <a href="https://www.linkedin.com/in/pierre-mcdougall/" target="_blank">
+            <div>
+              <img src="LinkedInIcon.png" height="70" width="70"> 
+            </div>
+          </a>
+        </div>
+      </div>
+      <p class="copyright">Pierre McDougall © 2020</p>
+    </footer>
+  </body>
+</html>

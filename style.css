@@ -1,0 +1,379 @@
+body{
+  font: 75% Arial;
+  background-color:#2f2f2f;
+  background-image: url('Background.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; 
+  background-size: cover;
+  width: 100%;
+  margin: 0;
+}
+h1, h2, h3, p, li{
+  color: white;
+}
+h1, h2, h3{
+  text-align: center;
+}
+h1{
+  font-size: 3.5rem;
+}
+h2{
+  font-size: 1.75rem;
+}
+h3{
+  font-size: 1.5rem;
+}
+p, li{
+  color:white;
+  font-weight: normal;
+  font-size: 1.3rem;
+}
+
+nav ul {
+  list-style-type: none;
+  overflow: hidden;
+  width: 50%;
+  padding: 0;
+  margin: 0 auto;
+}
+nav li {
+  float: left;
+  width: 50%; 
+  min-width: 75px;
+}
+nav li a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 10px;
+  transition: background 0.25s;
+}
+nav li a:hover {
+  background-color: black;
+}
+section, footer{
+  padding: 20px 20%;
+  padding-bottom: 30px;
+}
+footer{
+  box-shadow: 0 100vh 0 100vh #2f2f2f;
+  text-align: center;
+}
+footer p.copyright{
+  font-size: 1rem;
+  margin-top: 40px;
+}
+
+.dropdown div{
+  visibility:hidden;
+  position: absolute;
+  border-top-color: black;
+  border-top-width: thin;
+  border-top-style: solid;
+  opacity: 0;
+  left: 0;
+  width: 50%;
+  margin: 0 25%;
+  transition: opacity 0.25s, visibility 0.2s;
+}
+.dropdown:hover div{
+  visibility:visible;
+  opacity: 1;
+}
+.dropdown div a {
+  font-weight: normal;
+  font-size: 1.3rem;
+}
+.dropdown div a:hover {
+  background-color: black;
+}
+
+.banner{
+  height: 800px;
+}
+.banner h1{
+  width: 100%;
+  margin-top: 350px;
+}
+/*
+.bannerSmall{
+  height: 200px;
+}
+.bannerSmall h1{
+  width: 100%;
+  margin-top: 75px;
+}
+*/
+
+.videoSection{
+  text-align: center;
+  padding: 50px 0;
+}
+.videoSection h1{
+  margin-bottom: 4rem;
+}
+.projects{
+  padding: 20px 40px;
+}
+.projects div{
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.projects div div{
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 1% 1%;
+}
+.projects div div img{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+.projects div div h3{
+  text-align: center;
+  position: absolute;
+  overflow: hidden;
+  font-size: 1.75rem;
+  opacity: 0;
+  width: 80%;
+  margin: 0 10%;
+  top: 43%;
+  transition: opacity 0.25s;
+}
+.projects div div .tintPanel{
+  position: absolute;
+  background-color: #2f2f2f;
+  opacity: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  transition: opacity 0.25s;
+}
+.projects div div:hover .tintPanel{
+  opacity: 0.6;
+}
+.projects div div:hover h3{
+  opacity: 1;
+}
+
+.opaqueBG{
+  background-color: #2f2f2f;
+}
+.semiOpaqueBG{
+  background: rgba(32, 32, 32, 0.6);
+}
+.alignElements{
+  text-align: center;
+}
+
+
+.buttonDivContainer{
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  width: 140px;
+  height: 140px;
+}
+.buttonDivContainer div{
+  position: absolute;
+  background-color:#4a9bf0;
+  border-radius: 4px;
+  padding: 10px;
+  transition: background 0.5s, padding 0.5s, border-radius 0.5s;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.buttonDivContainer div:hover{
+  background-color:#30bbff;
+  padding: 12px;
+  border-radius: 5px;
+}
+
+
+
+/* Text Button (use with divs)*/
+.buttonTextContainer {
+  display: inline-block;
+  min-width: 200px;
+  width: 48%;
+  
+}
+
+.buttonText {
+    margin: 20px 20px;
+    text-align: center;
+}
+.buttonText a {
+    background-color: #00a0ff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 12px;
+    transition: background 0.5s, padding 0.5s, border-radius 0.5s;
+}
+.buttonText a:hover {
+    background-color: #00c0ff;
+    padding: 12px;
+    border-radius: 5px;
+}
+
+
+
+
+.badge{
+  text-align: center;
+}
+.badge img{
+  width: 250px;
+}
+
+
+/* Div Container */
+.centredContainer{
+    text-align: center;
+    margin: 0 auto;
+}
+.centredContainer {
+    text-align: center;
+    margin: 0 auto;
+}
+.centredContainer img#CSTypes{
+    width: 600px;
+    Height: 200px;
+}
+
+
+.videoContainer{
+  width: 50%;
+  margin: 0 auto;
+}
+.videoContainer div{
+  position: relative;
+  width: 100%;
+  padding-top: 64%;
+}
+.videoContainer div iframe{
+  position:  absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+.divider{
+  border-top-color: black;
+  border-top-width: thin;
+  border-top-style: solid;
+}
+.spacer{
+  margin-top: 50px;
+}
+
+
+@media (max-height: 1000px){
+  .banner{
+    height: 600px;
+  }
+  .banner h1{
+  margin-top: 250px;
+  } 
+}
+@media (max-height: 800px){
+  .banner{
+    height: 400px;
+  }
+  .banner h1{
+  margin-top: 175px;
+  } 
+}
+@media (max-height: 600px){
+  .banner{
+    height: 250px;
+  }
+  .banner h1{
+  margin-top: 100px;
+  } 
+}
+@media (max-width: 1000px){
+  nav ul{
+    width: 75%;
+  }
+  .dropdown div{
+    width: 75%;
+    margin: 0 12.5%;
+  }
+  section, footer{
+  padding: 20px 10%;
+  }
+}
+@media (max-width: 750px){
+  html{
+    font-size: 0.8rem;
+  }
+  .projects div{
+    max-width: 500px;
+  }
+  .projects div div{
+  width: 200px;
+  height: 200px;
+  margin: 1% 1%;
+  }
+  .videoContainer{
+  width: 75%;
+  margin: 0 auto;
+  }
+  .badge img{
+  width: 200px;
+  }
+  .centredContainer img#CSTypes{
+    width: 400px;
+    Height: 133px;
+  }
+}
+@media (max-width: 600px){
+  h1{
+    font-size: 2.5rem;
+  }
+  
+  
+}
+@media (max-width: 500px){
+  .centredContainer img#CSTypes{
+    width: 300px;
+    Height: 100px;
+  }
+}
+@media (max-width: 400px){
+  nav ul {
+    width: 100%;
+    margin: 0;
+  }
+  nav li {
+    clear: both;
+    width: 100%;
+    margin: 0;
+  }
+  .dropdown div{
+    width: 70%;
+    margin: 0 15%;
+  }
+  
+}
