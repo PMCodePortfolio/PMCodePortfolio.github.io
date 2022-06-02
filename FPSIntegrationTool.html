@@ -4,25 +4,32 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>FPS Integration Tool - Pierre_McDougall_CODE</title>
-    <link rel="stylesheet" href="style.css">
+    <link href="style.css" rel="stylesheet">
+    <link href="NavBarStyle.css" rel="stylesheet">
+    <script type="text/javascript" src="java.js"></script>
   </head>
   <body>
     <header>
       <nav class="opaqueBG">
-        <ul>
-          <li>
-            <a href="index.html">Home</a>
-          </li>
-          <li class="dropdown">
-            <a>Projects</a>
-            <div class="opaqueBG">
-              <a href="FPSIntegrationTool.html">FPS Integration Tool</a>
-              <a href="AstroBumpers.html">AstroBumpers</a>
-              <a href="CrossSectionTool.html">Cross Section Tool</a>
-              <a href="CPPOpenGLDemo.html">C++ &amp; OpenGL Demonstration</a>
+        <div class="navDiv" id="navDivID">
+          <div class="navIconHolder">
+            <a href="javascript:void(0);" class="navIcon" onclick="NavIconDropdownToggle()">
+              <img src="MobileNavIcon.png" height="25" width="25">
+            </a>
+          </div>
+          <a href="index.html" class="option">Home</a>
+          <div class="dropdownHolder">
+            <button class="dropdownOption">
+              Projects
+            </button>
+            <div class="subOptionHolder">
+              <a href="AstroBumpers.html" class="subOption">AstroBumpers</a>
+              <a href="CPPOpenGLDemo.html" class="subOption">C++ &amp; OpenGL Demonstration</a>
+              <a href="CrossSectionTool.html" class="subOption">Cross Section Tool</a>
+              <a href="FPSIntegrationTool.html" class="subOption selected">FPS Integration Tool</a>
             </div>
-          </li>
-        </ul>
+          </div>
+        </div>
       </nav>
     </header>
     <main>

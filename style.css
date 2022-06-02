@@ -6,6 +6,16 @@ body{
   background-attachment: fixed;
   background-position: center; 
   background-size: cover;
+    
+    z-index: -10;
+    
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    
+    
+    
+    
   width: 100%;
   margin: 0;
 }
@@ -30,31 +40,6 @@ p, li{
   font-size: 1.3rem;
 }
 
-nav ul {
-  list-style-type: none;
-  overflow: hidden;
-  width: 50%;
-  padding: 0;
-  margin: 0 auto;
-}
-nav li {
-  float: left;
-  width: 50%; 
-  min-width: 75px;
-}
-nav li a {
-  display: block;
-  text-align: center;
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-  font-size: 1.5rem;
-  padding: 10px;
-  transition: background 0.25s;
-}
-nav li a:hover {
-  background-color: black;
-}
 section, footer{
   padding: 20px 20%;
   padding-bottom: 30px;
@@ -209,9 +194,7 @@ footer p.copyright{
   display: inline-block;
   min-width: 200px;
   width: 48%;
-  
 }
-
 .buttonText {
     margin: 20px 20px;
     text-align: center;
@@ -233,8 +216,6 @@ footer p.copyright{
     padding: 12px;
     border-radius: 5px;
 }
-
-
 
 
 .badge{
@@ -313,9 +294,6 @@ footer p.copyright{
   } 
 }
 @media (max-width: 1000px){
-  nav ul{
-    width: 75%;
-  }
   .dropdown div{
     width: 75%;
     margin: 0 12.5%;
@@ -352,8 +330,6 @@ footer p.copyright{
   h1{
     font-size: 2.5rem;
   }
-  
-  
 }
 @media (max-width: 500px){
   .centredContainer img#CSTypes{
@@ -362,18 +338,8 @@ footer p.copyright{
   }
 }
 @media (max-width: 400px){
-  nav ul {
-    width: 100%;
-    margin: 0;
-  }
-  nav li {
-    clear: both;
-    width: 100%;
-    margin: 0;
-  }
   .dropdown div{
     width: 70%;
     margin: 0 15%;
   }
-  
 }
